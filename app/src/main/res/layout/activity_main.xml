@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="0dp"
+        android:background="@color/colorPrimaryDark">
+
+        <Button
+            android:id="@+id/btnMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:backgroundTint="#03A9F4"
+            android:gravity="center_horizontal"
+            android:onClick="musicon"
+            android:paddingTop="14dp"
+            android:text="@string/Music_off"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textDirection="firstStrong"
+            android:textIsSelectable="false" />
+
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginEnd="100dp"
+            android:backgroundTint="#03A9F4"
+            android:gravity="center_horizontal"
+            android:onClick="pausebt"
+            android:paddingTop="14dp"
+            android:text="@string/Pause"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textDirection="firstStrong"
+            android:textIsSelectable="false"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/scoreLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center_horizontal|fill"
+            android:text="@string/score"
+            android:textAlignment="gravity"
+
+
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/gameFrame"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="#F18BC34A">
+
+        <ImageView
+            android:id="@+id/boxImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/basket"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/basket"
+            />
+
+        <ImageView
+            android:id="@+id/bombImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bomb"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/bomb"
+           />
+
+        <ImageView
+            android:id="@+id/waterlemonImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/waterlemon"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/waterlemon"
+             />
+
+        <ImageView
+            android:id="@+id/orangeImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/orange"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/orange" />
+
+        <ImageView
+            android:id="@+id/bananaImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/banana"
+            android:src="@drawable/banana"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/startLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#24FFFFFF"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#3F51B5"
+                android:onClick="onStart"
+                android:text="@string/start"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#3F51B5"
+                android:onClick="onQuit"
+                android:text="@string/Quit"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/name"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/HighScoreLbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/highScore"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/todayscore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

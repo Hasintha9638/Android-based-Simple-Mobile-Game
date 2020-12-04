@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Catch Fruits</string>
+    <string name="score">Score : 0</string>
+    <string name="start">Start</string>
+    <string name="name">Catch the Fruits V1.00</string>
+
+    <string name="Music_off">Music OFF</string>
+    <string name="Pause">Pause</string>
+    <string name="highScore">High score : 300</string>
+    <string name="Quit">Quit</string>
+
+</resources>
